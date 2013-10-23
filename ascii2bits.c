@@ -21,7 +21,6 @@ int main() {
 	}
 	if (shiftCount != 0) {
 		fprintf(stderr, "Error: Stream doesn't align to bytes. Padding with zeroes\n");
-		fprintf(stderr, "%u\n", shiftCount);
 		printf("%c", accum << shiftCount);
 	}
 	return 0;
